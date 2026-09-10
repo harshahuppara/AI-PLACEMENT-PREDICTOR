@@ -1,0 +1,22 @@
+{
+  "model_type": "XGBClassifier",
+  "objective": "binary:logistic",
+  "feature_count": 60,
+  "mandatory_groups": [
+    "PROGRAMMING SKILLS",
+    "INTERVIEW SCORE",
+    "APTITUDE SCORE",
+    "COMMUNICATION SCORE",
+    "PROJECTS",
+    "HACKATHONS"
+  ],
+  "preprocessor": "ColumnTransformer(OneHotEncoder + Passthrough)",
+  "save_paths": {
+    "model_json": "models/xgboost_placement_model.json",
+    "model_pkl": "models/xgboost_placement_model.pkl",
+    "preprocessor": "models/preprocessor.pkl",
+    "metrics": "models/metrics.json",
+    "shap_plot": "models/shap_summary.png",
+    "confusion_matrix": "models/confusion_matrix.png"
+  }
+}

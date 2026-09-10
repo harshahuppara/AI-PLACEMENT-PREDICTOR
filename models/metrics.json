@@ -1,0 +1,43 @@
+{
+  "dataset_name": "AI_Placement_Predictor_Dataset_V3.csv",
+  "dataset_records": 1000,
+  "training_records": 800,
+  "testing_records": 200,
+  "target_leakage_check": "PASSED",
+  "mandatory_six_groups_check": "PASSED",
+  "overfitting_check": "PASSED",
+  "cgpa_dominance_check": "PASSED",
+  "cross_validation": {
+    "folds": 5,
+    "type": "StratifiedKFold",
+    "mean_roc_auc": 0.7869,
+    "mean_f1": 0.7355,
+    "mean_accuracy": 0.7087
+  },
+  "test_metrics": {
+    "accuracy_pct": 68.5,
+    "precision_pct": 69.17,
+    "recall_pct": 76.15,
+    "f1_score_pct": 72.49,
+    "roc_auc": 0.7549,
+    "pr_auc": 0.741,
+    "sensitivity": 0.7615,
+    "specificity": 0.5934
+  },
+  "threshold_optimization": {
+    "default_threshold": 0.5,
+    "optimized_threshold": 0.35,
+    "optimized_f1": 78.12
+  },
+  "best_hyperparameters": {
+    "subsample": 0.7,
+    "reg_lambda": 2.0,
+    "reg_alpha": 0.5,
+    "n_estimators": 100,
+    "min_child_weight": 5,
+    "max_depth": 4,
+    "learning_rate": 0.02,
+    "gamma": 0.1,
+    "colsample_bytree": 0.6
+  }
+}

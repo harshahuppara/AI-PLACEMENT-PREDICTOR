@@ -1,0 +1,9 @@
+experiment,features_count,accuracy,f1_score,roc_auc,f1_drop,auc_drop
+A: All Valid Features,60,68.5,72.49,0.7549,0.0,0.0
+B: Remove Academic,54,69.0,72.57,0.7529,-0.08,0.002
+C: Remove Programming,43,69.0,72.57,0.7613,-0.08,-0.0064
+D: Remove Interview,59,68.0,71.68,0.7579,0.81,-0.003
+E: Remove Aptitude,56,69.5,72.65,0.7576,-0.16,-0.0027
+F: Remove Communication,56,69.5,72.89,0.7584,-0.4,-0.0035
+G: Remove Projects,56,70.0,73.68,0.7637,-1.2,-0.0088
+H: Remove Hackathons,59,67.0,70.54,0.7543,1.95,0.0006
